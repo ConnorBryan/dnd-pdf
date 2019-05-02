@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Document, Page } from "react-pdf/dist/entry.webpack";
 
-function App() {
+import sheet from "./sheet.pdf";
+
+export default function App() {
+  const [numberOfPages, setNumberOfPages] = React.useState(0);
+  const [pageNumber, setPageNumber] = React.useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Document
+        file={sheet}
+        onLoadSuccess={({ numPages }) => setNumberOfPages(numPages)}
+      >
+        <Page pageNumber={pageNumber} />
+      </Document>
+      {console.log("\n\n\n", "sheet", sheet, "\n\n\n")}
     </div>
   );
 }
-
-export default App;
