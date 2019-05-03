@@ -111,7 +111,7 @@ export default function format(character) {
 
     // Battle
     [character.armorClass, 239, 631, 16],
-    [character.initiative, 300, 631, 16],
+    [`+${character.initiative}`, 295, 631, 16],
     [character.speed, 354, 631, 16],
 
     // Hit Points
@@ -197,9 +197,11 @@ export default function format(character) {
     const bonusCoordinates = attacksAndSpellcastingCoordinates.shift();
     const damageCoordinates = attacksAndSpellcastingCoordinates.shift();
 
-    statPage.push([attack.name, ...nameCoordinates]);
-    statPage.push([`+${attack.bonus}`, ...bonusCoordinates]);
-    statPage.push([attack.damage, ...damageCoordinates]);
+    if (attack.name) {
+      statPage.push([attack.name, ...nameCoordinates]);
+      statPage.push([`+${attack.bonus}`, ...bonusCoordinates]);
+      statPage.push([attack.damage, ...damageCoordinates]);
+    }
   });
   /* === /Attacks & Spellcasting === */
 
@@ -224,8 +226,8 @@ export default function format(character) {
 
     if (character.proficiencies[property].length > 2) {
       const [first, second, ...others] = character.proficiencies[property];
-      const topRow = `${label}: ${first}, ${second},`;
-      const tempBottomRow = others.join(", ");
+      const topRow = `${label}: ${first} ${second}`;
+      const tempBottomRow = others.join(" ");
       const bottomRow = tempBottomRow.slice(0, tempBottomRow.length);
 
       statPage.push([topRow, ...topRowCoordinates]);
@@ -233,7 +235,7 @@ export default function format(character) {
     } else if (character.proficiencies[property].length === 2) {
       const [first, second] = character.proficiencies[property];
 
-      statPage.push([`${label}: ${first}, ${second}`, ...topRowCoordinates]);
+      statPage.push([`${label}: ${first} ${second}`, ...topRowCoordinates]);
     } else {
       statPage.push([
         `${label}: ${character.proficiencies[property][0]}`,
@@ -272,7 +274,9 @@ export default function format(character) {
   character.equipment.forEach(item => {
     const coordinates = equipmentCoordinates.shift();
 
-    statPage.push([`${item.name} x${item.quantity}`, ...coordinates]);
+    if (item.name) {
+      statPage.push([`${item.name} x${item.quantity}`, ...coordinates]);
+    }
   });
   /* === /Equipment === */
 
