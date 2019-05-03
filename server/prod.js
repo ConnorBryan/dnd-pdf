@@ -51,4 +51,4 @@ wsServer.on("connection", socket => {
   });
 });
 
-server.listen(9000, "dnd-pdf is listening.");
+server.listen(9000);
