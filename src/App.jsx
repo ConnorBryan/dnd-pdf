@@ -136,6 +136,10 @@ export default function App() {
           file={{
             data: modifiedPdf
           }}
+          onLoadError={error => {
+            alert(error);
+            alert(JSON.stringify(error));
+          }}
         >
           <Page pageNumber={1} />
           <Page pageNumber={3} />
