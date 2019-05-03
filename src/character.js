@@ -10,7 +10,7 @@ export default {
     experiencePoints: "10000"
   },
   abilityScores: {
-    STR: 10,
+    STR: 12,
     DEX: 10,
     CON: 10,
     INT: 10,
@@ -29,7 +29,7 @@ export default {
       value: 1
     },
     CON: {
-      proficient: false,
+      proficient: true,
       value: 1
     },
     INT: {
@@ -74,13 +74,17 @@ export default {
       proficient: true,
       value: 1
     },
+    intimidation: {
+      proficient: true,
+      value: 1
+    },
     investigation: {
       proficient: true,
       value: 1
     },
     medicine: {
       proficient: true,
-      value: 1
+      value: 3
     },
     nature: {
       proficient: true,
@@ -137,8 +141,8 @@ export default {
     current: 5
   },
   deathSaves: {
-    successes: 0,
-    failures: 0
+    successes: 3,
+    failures: 2
   },
   attacksAndSpellcasting: [
     {
@@ -184,6 +188,18 @@ export default {
       spells: [
         {
           name: "Magic Missile",
+          prepared: true
+        }
+      ]
+    },
+    2: {
+      slots: {
+        maximum: 1,
+        expended: 1
+      },
+      spells: [
+        {
+          name: "Detect Poison & Disease",
           prepared: true
         }
       ]
