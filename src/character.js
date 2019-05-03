@@ -124,7 +124,7 @@ export default {
     languages: ["Common", "Elven"],
     tools: ["Thieve's Tools"],
     instruments: ["Viola"],
-    weapons: ["Bows", "Crossbows"],
+    weapons: ["Bows", "Crossbows", "Knives", "Tools", "Daggers"],
     armor: ["Light"]
   },
   armorClass: 16,

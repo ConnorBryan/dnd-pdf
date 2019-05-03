@@ -226,7 +226,7 @@ export default function format(character) {
       const [first, second, ...others] = character.proficiencies[property];
       const topRow = `${label}: ${first}, ${second},`;
       const tempBottomRow = others.join(", ");
-      const bottomRow = tempBottomRow.slice(0, tempBottomRow.length - 3);
+      const bottomRow = tempBottomRow.slice(0, tempBottomRow.length);
 
       statPage.push([topRow, ...topRowCoordinates]);
       statPage.push([bottomRow, ...bottomRowCoordinates]);
