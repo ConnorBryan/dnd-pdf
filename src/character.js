@@ -121,11 +121,11 @@ export default {
   },
   passivePerception: 12,
   proficiencies: {
-    languages: ["Common", "Elven"],
-    tools: ["Thieve's Tools"],
-    instruments: ["Viola"],
-    weapons: ["Bows", "Crossbows", "Knives", "Tools", "Daggers"],
-    armor: ["Light"]
+    languages: ["Common", "Elven", "", "", "", ""],
+    tools: ["Thieves Tools", "", "", "", "", ""],
+    instruments: ["Viola", "", "", "", "", ""],
+    weapons: ["Bows", "Crossbows", "Knives", "Tools", "Daggers", ""],
+    armor: ["Light", "", "", "", "", ""]
   },
   armorClass: 16,
   initiative: 2,
@@ -149,6 +149,16 @@ export default {
       name: "Heavy Xbow",
       bonus: 8,
       damage: "1d10+3 prc."
+    },
+    {
+      name: "",
+      bonus: "",
+      damage: ""
+    },
+    {
+      name: "",
+      bonus: "",
+      damage: ""
     }
   ],
   resource: {
@@ -161,6 +171,62 @@ export default {
     {
       name: "Torch",
       quantity: 10
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
+    },
+    {
+      name: "",
+      quantity: ""
     }
   ],
   personalityTraits: ["A", "B"],
@@ -179,7 +245,7 @@ export default {
   spellSaveDc: 13,
   spellAttackBonus: 5,
   spellsKnown: {
-    cantrips: ["Mage Hand"],
+    cantrips: ["Mage Hand", "", "", "", "", "", "", ""],
     1: {
       slots: {
         maximum: 2,
@@ -189,6 +255,54 @@ export default {
         {
           name: "Magic Missile",
           prepared: true
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
         }
       ]
     },
@@ -201,6 +315,378 @@ export default {
         {
           name: "Detect Poison & Disease",
           prepared: true
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        }
+      ]
+    },
+    3: {
+      slots: {
+        maximum: 0,
+        expended: 0
+      },
+      spells: [
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        }
+      ]
+    },
+    4: {
+      slots: {
+        maximum: 0,
+        expended: 0
+      },
+      spells: [
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        }
+      ]
+    },
+    5: {
+      slots: {
+        maximum: 0,
+        expended: 0
+      },
+      spells: [
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        }
+      ]
+    },
+    6: {
+      slots: {
+        maximum: 0,
+        expended: 0
+      },
+      spells: [
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        }
+      ]
+    },
+    7: {
+      slots: {
+        maximum: 0,
+        expended: 0
+      },
+      spells: [
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        }
+      ]
+    },
+    8: {
+      slots: {
+        maximum: 0,
+        expended: 0
+      },
+      spells: [
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        }
+      ]
+    },
+    9: {
+      slots: {
+        maximum: 0,
+        expended: 0
+      },
+      spells: [
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
+        },
+        {
+          name: "",
+          prepared: false
         }
       ]
     }

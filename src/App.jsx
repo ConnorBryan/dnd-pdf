@@ -10,15 +10,16 @@ import {
 import sheet from "./sheet.pdf";
 import character from "./character";
 import format from "./format";
+import CharacterForm from "./CharacterForm";
 
-async function getSheet(onFinish) {
+async function getSheet(derp, onFinish) {
   const thing = await fetch(sheet).then(res => res.arrayBuffer());
   const pdfDoc = PDFDocumentFactory.load(new Uint8Array(thing));
   const [helveticaRef, helveticaFont] = pdfDoc.embedStandardFont(
     StandardFonts.Helvetica
   );
   const [statPage, , spellPage] = pdfDoc.getPages();
-  const { statPageData, spellPageData } = format(character);
+  const { statPageData, spellPageData } = format(derp);
   const statPageContentStream = pdfDoc.createContentStream(
     ...statPageData.map(field => write(...field))
   );
@@ -49,17 +50,33 @@ async function getSheet(onFinish) {
 }
 
 export default function App() {
+  const [activeCharacter, setActiveCharacter] = React.useState(character);
   const [numberOfPages, setNumberOfPages] = React.useState(0);
   const [pageNumber, setPageNumber] = React.useState(1);
   const [modifiedPdf, setModifiedPdf] = React.useState(null);
+  const [showing, setShowing] = React.useState(true);
+
+  let timeout;
+
+  function changeActiveCharacter(values) {
+    clearTimeout(timeout);
+    setShowing(false);
+    setActiveCharacter(values);
+
+    timeout = setTimeout(() => setShowing(true), 250);
+  }
 
   React.useEffect(() => {
-    getSheet(setModifiedPdf);
-  }, []);
+    getSheet(activeCharacter, setModifiedPdf);
+  }, [activeCharacter]);
 
   return (
     <div className="App">
-      {modifiedPdf && (
+      <CharacterForm
+        character={activeCharacter}
+        onSubmit={values => changeActiveCharacter(values)}
+      />
+      {showing && modifiedPdf && (
         <Document
           file={{
             data: modifiedPdf
