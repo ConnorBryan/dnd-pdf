@@ -1,92 +1,92 @@
 module.exports = {
   characters: [
     {
-      name: "Thia Ilfakur",
+      name: "S'zrathis-Dren",
       basics: {
-        class: "Ranger",
-        level: 5,
-        background: "Outlander",
-        player: "Elena",
-        race: "Wood Elf",
+        class: "Monk",
+        level: "4",
+        background: "Hermit",
+        player: "Dave",
+        race: "Lizardfolk",
         alignment: "Neutral",
-        experiencePoints: "10000"
+        experiencePoints: "3200"
       },
       abilityScores: {
-        STR: 12,
-        DEX: 10,
-        CON: 10,
-        INT: 10,
-        WIS: 10,
-        CHA: 10
+        STR: "12",
+        DEX: "16",
+        CON: "16",
+        INT: "10",
+        WIS: "15",
+        CHA: "8"
       },
       inspiration: true,
       proficiencyBonus: 3,
       savingThrows: {
         STR: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "13"
         },
         DEX: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "5"
         },
         CON: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "3"
         },
         INT: {
           proficient: false,
-          value: 1
+          value: "0"
         },
         WIS: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "2"
         },
         CHA: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "-1"
         }
       },
       skills: {
         acrobatics: {
           proficient: true,
-          value: 1
+          value: "5"
         },
         animalHandling: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "2"
         },
         arcana: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         athletics: {
-          proficient: true,
+          proficient: false,
           value: 1
         },
         deception: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "-1"
         },
         history: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         insight: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "2"
         },
         intimidation: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "-1"
         },
         investigation: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         medicine: {
           proficient: true,
-          value: 3
+          value: "4"
         },
         nature: {
           proficient: true,
@@ -94,147 +94,148 @@ module.exports = {
         },
         perception: {
           proficient: true,
-          value: 1
+          value: "4"
         },
         performance: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "-1"
         },
         persuasion: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "-1"
         },
         religion: {
           proficient: true,
-          value: 1
+          value: "2"
         },
         sleightOfHand: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "3"
         },
         stealth: {
           proficient: true,
-          value: 1
+          value: "5"
         },
         survival: {
           proficient: true,
-          value: 1
+          value: "4"
         }
       },
-      passivePerception: 12,
+      passivePerception: "14",
       proficiencies: {
-        languages: ["Common", "Elven", "", "", "", ""],
-        tools: ["Thieves Tools", "", "", "", "", ""],
-        instruments: ["Viola", "", "", "", "", ""],
-        weapons: ["Bows", "Crossbows", "Knives", "Tools", "Daggers", ""],
-        armor: ["Light", "", "", "", "", ""]
+        languages: ["Common", "Draconic", "Primordial", "", "", ""],
+        tools: ["Herbalism Kit", "Leatherworker's Tools", "", "", "", ""],
+        instruments: ["", "", "", "", "", ""],
+        weapons: ["Shortsword", "Simple Weapons", "", "", "", ""],
+        armor: ["", "", "", "", "", ""]
       },
       armorClass: 16,
-      initiative: 2,
-      speed: 35,
+      initiative: "3",
+      speed: "40",
       hitPoints: {
-        maximum: 33,
-        current: 33,
+        maximum: "35",
+        current: "35",
         temporary: 0
       },
       hitDice: {
         total: 5,
         die: "1d8",
-        current: 5
+        current: "4",
+        maximum: "4"
       },
       deathSaves: {
-        successes: 3,
-        failures: 2
+        successes: "0",
+        failures: "0"
       },
       attacksAndSpellcasting: [
         {
-          name: "Heavy Xbow",
-          bonus: 8,
-          damage: "1d10+3 prc."
+          name: "Nunchaku",
+          bonus: "5",
+          damage: "1d4+3 bldg."
         },
         {
-          name: "",
-          bonus: "",
-          damage: ""
+          name: "Shuriken",
+          bonus: "5",
+          damage: "1d4+3 prc."
         },
         {
-          name: "",
-          bonus: "",
-          damage: ""
+          name: "Unarmed",
+          bonus: "5",
+          damage: "1d4+3 bldg."
         }
       ],
       resource: {
-        name: "",
-        maximum: 0,
-        current: 0
+        name: "Ki",
+        maximum: "4",
+        current: "4"
       },
-      gold: 200,
+      gold: "15",
       equipment: [
         {
+          name: "Brass Bell",
+          quantity: "1"
+        },
+        {
+          name: "Map Case",
+          quantity: "1"
+        },
+        {
+          name: "Healer's Kit",
+          quantity: "1"
+        },
+        {
+          name: "Rations",
+          quantity: "10"
+        },
+        {
+          name: "Black Uwagi",
+          quantity: "1"
+        },
+        {
           name: "Torch",
-          quantity: 10
+          quantity: "10"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Tinderbox",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Waterskin",
+          quantity: "2"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Leatherworker's Tools",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Woodcarver's Tools",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Herbalism Kit",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Playing Cards",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Incense",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
+          name: "Bowl",
+          quantity: "1"
         },
         {
           name: "",
           quantity: ""
         }
       ],
-      personalityTraits: ["A", "B"],
-      ideals: ["A", "B"],
-      bonds: ["A", "B"],
-      flaws: ["A", "B"],
+      personalityTraits: ["-", "-"],
+      ideals: ["-", "-"],
+      bonds: ["-", "-"],
+      flaws: ["-", "B"],
       featuresAndTraits: {
         race: ["A", "B"],
         class: ["C", "D", "E"],
@@ -247,16 +248,15 @@ module.exports = {
       spellSaveDc: 13,
       spellAttackBonus: 5,
       spellsKnown: {
-        cantrips: ["Mage Hand", "", "", "", "", "", "", ""],
-        1: {
+        "1": {
           slots: {
             maximum: 2,
             expended: 0
           },
           spells: [
             {
-              name: "Magic Missile",
-              prepared: true
+              name: "",
+              prepared: false
             },
             {
               name: "",
@@ -308,15 +308,15 @@ module.exports = {
             }
           ]
         },
-        2: {
+        "2": {
           slots: {
             maximum: 1,
             expended: 1
           },
           spells: [
             {
-              name: "Detect Poison & Disease",
-              prepared: true
+              name: "",
+              prepared: false
             },
             {
               name: "",
@@ -368,7 +368,7 @@ module.exports = {
             }
           ]
         },
-        3: {
+        "3": {
           slots: {
             maximum: 0,
             expended: 0
@@ -428,7 +428,7 @@ module.exports = {
             }
           ]
         },
-        4: {
+        "4": {
           slots: {
             maximum: 0,
             expended: 0
@@ -488,7 +488,7 @@ module.exports = {
             }
           ]
         },
-        5: {
+        "5": {
           slots: {
             maximum: 0,
             expended: 0
@@ -532,7 +532,7 @@ module.exports = {
             }
           ]
         },
-        6: {
+        "6": {
           slots: {
             maximum: 0,
             expended: 0
@@ -576,7 +576,7 @@ module.exports = {
             }
           ]
         },
-        7: {
+        "7": {
           slots: {
             maximum: 0,
             expended: 0
@@ -620,7 +620,7 @@ module.exports = {
             }
           ]
         },
-        8: {
+        "8": {
           slots: {
             maximum: 0,
             expended: 0
@@ -656,7 +656,7 @@ module.exports = {
             }
           ]
         },
-        9: {
+        "9": {
           slots: {
             maximum: 0,
             expended: 0
@@ -691,68 +691,69 @@ module.exports = {
               prepared: false
             }
           ]
-        }
+        },
+        cantrips: ["", "", "", "", "", "", "", ""]
       }
     },
     {
-      name: "Bob",
+      name: "Albdorphis the Wyrd",
       basics: {
-        class: "Ranger",
-        level: 5,
+        class: "Warlock",
+        level: "3",
         background: "Outlander",
-        player: "Elena",
-        race: "Wood Elf",
-        alignment: "Neutral",
-        experiencePoints: "10000"
+        player: "Joel",
+        race: "Tiefling",
+        alignment: "Chaotic Good",
+        experiencePoints: "1870"
       },
       abilityScores: {
-        STR: 12,
-        DEX: 10,
-        CON: 10,
-        INT: 10,
-        WIS: 10,
-        CHA: 10
+        STR: "8",
+        DEX: "12",
+        CON: "14",
+        INT: "11",
+        WIS: "13",
+        CHA: "17"
       },
       inspiration: true,
-      proficiencyBonus: 3,
+      proficiencyBonus: "2",
       savingThrows: {
         STR: {
           proficient: false,
-          value: 1
+          value: "-1"
         },
         DEX: {
           proficient: false,
           value: 1
         },
         CON: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "2"
         },
         INT: {
           proficient: false,
-          value: 1
+          value: "0"
         },
         WIS: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "3"
         },
         CHA: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "5"
         }
       },
       skills: {
         acrobatics: {
-          proficient: true,
+          proficient: false,
           value: 1
         },
         animalHandling: {
-          proficient: true,
+          proficient: false,
           value: 1
         },
         arcana: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         athletics: {
           proficient: true,
@@ -760,96 +761,97 @@ module.exports = {
         },
         deception: {
           proficient: true,
-          value: 1
+          value: "5"
         },
         history: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         insight: {
-          proficient: true,
+          proficient: false,
           value: 1
         },
         intimidation: {
           proficient: true,
-          value: 1
+          value: "5"
         },
         investigation: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         medicine: {
-          proficient: true,
-          value: 3
+          proficient: false,
+          value: "1"
         },
         nature: {
           proficient: true,
           value: 1
         },
         perception: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "1"
         },
         performance: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "3"
         },
         persuasion: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "3"
         },
         religion: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         sleightOfHand: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "1"
         },
         stealth: {
-          proficient: true,
+          proficient: false,
           value: 1
         },
         survival: {
           proficient: true,
-          value: 1
+          value: "3"
         }
       },
       passivePerception: 12,
       proficiencies: {
-        languages: ["Common", "Elven", "", "", "", ""],
-        tools: ["Thieves Tools", "", "", "", "", ""],
-        instruments: ["Viola", "", "", "", "", ""],
-        weapons: ["Bows", "Crossbows", "Knives", "Tools", "Daggers", ""],
-        armor: ["Light", "", "", "", "", ""]
+        languages: ["Common", "Infernal", "Sylvan", "", "", ""],
+        tools: ["", "", "", "", "", ""],
+        instruments: ["", "", "", "", "", ""],
+        weapons: ["", "", "", "", "", ""],
+        armor: ["", "", "", "", "", ""]
       },
-      armorClass: 16,
-      initiative: 2,
-      speed: 35,
+      armorClass: "11",
+      initiative: "1",
+      speed: "30",
       hitPoints: {
-        maximum: 33,
-        current: 33,
+        maximum: "24",
+        current: "24",
         temporary: 0
       },
       hitDice: {
         total: 5,
         die: "1d8",
-        current: 5
+        current: "3",
+        maximum: "3"
       },
       deathSaves: {
-        successes: 3,
-        failures: 2
+        successes: "0",
+        failures: "0"
       },
       attacksAndSpellcasting: [
         {
-          name: "Heavy Xbow",
-          bonus: 8,
-          damage: "1d10+3 prc."
+          name: "Eldritch Blast",
+          bonus: "6",
+          damage: "1d10+3 frc."
         },
         {
-          name: "",
-          bonus: "",
-          damage: ""
+          name: "Quarterstaff",
+          bonus: "-1",
+          damage: "1d6-1 bldg."
         },
         {
           name: "",
@@ -862,23 +864,23 @@ module.exports = {
         maximum: 0,
         current: 0
       },
-      gold: 200,
+      gold: "89",
       equipment: [
         {
           name: "Torch",
           quantity: 10
         },
         {
-          name: "",
-          quantity: ""
+          name: "Flame Cypher",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Arcane Focus (staff)",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Dungeoneering Pack",
+          quantity: "1"
         },
         {
           name: "",
@@ -925,10 +927,10 @@ module.exports = {
           quantity: ""
         }
       ],
-      personalityTraits: ["A", "B"],
-      ideals: ["A", "B"],
-      bonds: ["A", "B"],
-      flaws: ["A", "B"],
+      personalityTraits: ["Enjoys the fey.", "Hates to bathe."],
+      ideals: ["Follows a Satyr prince.", "Enjoys helping others."],
+      bonds: ["Fey sprite.", "  "],
+      flaws: ["Gambling addiction.", "B"],
       featuresAndTraits: {
         race: ["A", "B"],
         class: ["C", "D", "E"],
@@ -936,20 +938,35 @@ module.exports = {
         feat: ["G", "H"],
         item: ["I"]
       },
-      spellcastingClass: "Ranger",
-      spellcastingAbility: "WIS",
+      spellcastingClass: "Warlock",
+      spellcastingAbility: "CHA",
       spellSaveDc: 13,
       spellAttackBonus: 5,
       spellsKnown: {
-        cantrips: ["Mage Hand", "", "", "", "", "", "", ""],
-        1: {
+        "1": {
           slots: {
             maximum: 2,
             expended: 0
           },
           spells: [
             {
-              name: "Magic Missile",
+              name: "Faerie Fire",
+              prepared: true
+            },
+            {
+              name: "Charm Person",
+              prepared: true
+            },
+            {
+              name: "Invisibility",
+              prepared: true
+            },
+            {
+              name: "Sleep",
+              prepared: true
+            },
+            {
+              name: "Find Familiar",
               prepared: true
             },
             {
@@ -983,33 +1000,23 @@ module.exports = {
             {
               name: "",
               prepared: false
-            },
-            {
-              name: "",
-              prepared: false
-            },
-            {
-              name: "",
-              prepared: false
-            },
-            {
-              name: "",
-              prepared: false
-            },
-            {
-              name: "",
-              prepared: false
             }
-          ]
+          ],
+          maximum: "0",
+          expended: "0"
         },
-        2: {
+        "2": {
           slots: {
             maximum: 1,
             expended: 1
           },
           spells: [
             {
-              name: "Detect Poison & Disease",
+              name: "Mirror Image",
+              prepared: true
+            },
+            {
+              name: "Misty Step",
               prepared: true
             },
             {
@@ -1055,14 +1062,12 @@ module.exports = {
             {
               name: "",
               prepared: false
-            },
-            {
-              name: "",
-              prepared: false
             }
-          ]
+          ],
+          maximum: "2",
+          expended: "0"
         },
-        3: {
+        "3": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1122,7 +1127,7 @@ module.exports = {
             }
           ]
         },
-        4: {
+        "4": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1182,7 +1187,7 @@ module.exports = {
             }
           ]
         },
-        5: {
+        "5": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1226,7 +1231,7 @@ module.exports = {
             }
           ]
         },
-        6: {
+        "6": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1270,7 +1275,7 @@ module.exports = {
             }
           ]
         },
-        7: {
+        "7": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1314,7 +1319,7 @@ module.exports = {
             }
           ]
         },
-        8: {
+        "8": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1350,7 +1355,7 @@ module.exports = {
             }
           ]
         },
-        9: {
+        "9": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1385,96 +1390,106 @@ module.exports = {
               prepared: false
             }
           ]
-        }
+        },
+        cantrips: [
+          "Minor Illusion",
+          "Hellish Rebuke",
+          "Prestidigitation",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
       }
     },
     {
-      name: "Dan",
+      name: "S'zrathis-Dren",
       basics: {
-        class: "Ranger",
-        level: 5,
-        background: "Outlander",
-        player: "Elena",
-        race: "Wood Elf",
+        class: "Monk",
+        level: "4",
+        background: "Hermit",
+        player: "Dave",
+        race: "Lizardfolk",
         alignment: "Neutral",
-        experiencePoints: "10000"
+        experiencePoints: "3200"
       },
       abilityScores: {
-        STR: 12,
-        DEX: 10,
-        CON: 10,
-        INT: 10,
-        WIS: 10,
-        CHA: 10
+        STR: "12",
+        DEX: "16",
+        CON: "16",
+        INT: "10",
+        WIS: "15",
+        CHA: "8"
       },
       inspiration: true,
       proficiencyBonus: 3,
       savingThrows: {
         STR: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "13"
         },
         DEX: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "5"
         },
         CON: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "3"
         },
         INT: {
           proficient: false,
-          value: 1
+          value: "0"
         },
         WIS: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "2"
         },
         CHA: {
-          proficient: false,
-          value: 1
+          proficient: true,
+          value: "-1"
         }
       },
       skills: {
         acrobatics: {
           proficient: true,
-          value: 1
+          value: "5"
         },
         animalHandling: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "2"
         },
         arcana: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         athletics: {
-          proficient: true,
+          proficient: false,
           value: 1
         },
         deception: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "-1"
         },
         history: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         insight: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "2"
         },
         intimidation: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "-1"
         },
         investigation: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "0"
         },
         medicine: {
           proficient: true,
-          value: 3
+          value: "4"
         },
         nature: {
           proficient: true,
@@ -1482,147 +1497,148 @@ module.exports = {
         },
         perception: {
           proficient: true,
-          value: 1
+          value: "4"
         },
         performance: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "-1"
         },
         persuasion: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "-1"
         },
         religion: {
           proficient: true,
-          value: 1
+          value: "2"
         },
         sleightOfHand: {
-          proficient: true,
-          value: 1
+          proficient: false,
+          value: "3"
         },
         stealth: {
           proficient: true,
-          value: 1
+          value: "5"
         },
         survival: {
           proficient: true,
-          value: 1
+          value: "4"
         }
       },
-      passivePerception: 12,
+      passivePerception: "14",
       proficiencies: {
-        languages: ["Common", "Elven", "", "", "", ""],
-        tools: ["Thieves Tools", "", "", "", "", ""],
-        instruments: ["Viola", "", "", "", "", ""],
-        weapons: ["Bows", "Crossbows", "Knives", "Tools", "Daggers", ""],
-        armor: ["Light", "", "", "", "", ""]
+        languages: ["Common", "Draconic", "Primordial", "", "", ""],
+        tools: ["Herbalism Kit", "Leatherworker's Tools", "", "", "", ""],
+        instruments: ["", "", "", "", "", ""],
+        weapons: ["Shortsword", "Simple Weapons", "", "", "", ""],
+        armor: ["", "", "", "", "", ""]
       },
       armorClass: 16,
-      initiative: 2,
-      speed: 35,
+      initiative: "3",
+      speed: "40",
       hitPoints: {
-        maximum: 33,
-        current: 33,
+        maximum: "35",
+        current: "35",
         temporary: 0
       },
       hitDice: {
         total: 5,
         die: "1d8",
-        current: 5
+        current: "4",
+        maximum: "4"
       },
       deathSaves: {
-        successes: 3,
-        failures: 2
+        successes: "0",
+        failures: "0"
       },
       attacksAndSpellcasting: [
         {
-          name: "Heavy Xbow",
-          bonus: 8,
-          damage: "1d10+3 prc."
+          name: "Nunchaku",
+          bonus: "5",
+          damage: "1d4+3 bldg."
         },
         {
-          name: "",
-          bonus: "",
-          damage: ""
+          name: "Shuriken",
+          bonus: "5",
+          damage: "1d4+3 prc."
         },
         {
-          name: "",
-          bonus: "",
-          damage: ""
+          name: "Unarmed",
+          bonus: "5",
+          damage: "1d4+3 bldg."
         }
       ],
       resource: {
-        name: "",
-        maximum: 0,
-        current: 0
+        name: "Ki",
+        maximum: "4",
+        current: "4"
       },
-      gold: 200,
+      gold: "15",
       equipment: [
         {
+          name: "Brass Bell",
+          quantity: "1"
+        },
+        {
+          name: "Map Case",
+          quantity: "1"
+        },
+        {
+          name: "Healer's Kit",
+          quantity: "1"
+        },
+        {
+          name: "Rations",
+          quantity: "10"
+        },
+        {
+          name: "Black Uwagi",
+          quantity: "1"
+        },
+        {
           name: "Torch",
-          quantity: 10
+          quantity: "10"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Tinderbox",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Waterskin",
+          quantity: "2"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Leatherworker's Tools",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Woodcarver's Tools",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Herbalism Kit",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Playing Cards",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
+          name: "Incense",
+          quantity: "1"
         },
         {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
-        },
-        {
-          name: "",
-          quantity: ""
+          name: "Bowl",
+          quantity: "1"
         },
         {
           name: "",
           quantity: ""
         }
       ],
-      personalityTraits: ["A", "B"],
-      ideals: ["A", "B"],
-      bonds: ["A", "B"],
-      flaws: ["A", "B"],
+      personalityTraits: ["-", "-"],
+      ideals: ["-", "-"],
+      bonds: ["-", "-"],
+      flaws: ["-", "B"],
       featuresAndTraits: {
         race: ["A", "B"],
         class: ["C", "D", "E"],
@@ -1635,16 +1651,15 @@ module.exports = {
       spellSaveDc: 13,
       spellAttackBonus: 5,
       spellsKnown: {
-        cantrips: ["Mage Hand", "", "", "", "", "", "", ""],
-        1: {
+        "1": {
           slots: {
             maximum: 2,
             expended: 0
           },
           spells: [
             {
-              name: "Magic Missile",
-              prepared: true
+              name: "",
+              prepared: false
             },
             {
               name: "",
@@ -1696,15 +1711,15 @@ module.exports = {
             }
           ]
         },
-        2: {
+        "2": {
           slots: {
             maximum: 1,
             expended: 1
           },
           spells: [
             {
-              name: "Detect Poison & Disease",
-              prepared: true
+              name: "",
+              prepared: false
             },
             {
               name: "",
@@ -1756,7 +1771,7 @@ module.exports = {
             }
           ]
         },
-        3: {
+        "3": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1816,7 +1831,7 @@ module.exports = {
             }
           ]
         },
-        4: {
+        "4": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1876,7 +1891,7 @@ module.exports = {
             }
           ]
         },
-        5: {
+        "5": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1920,7 +1935,7 @@ module.exports = {
             }
           ]
         },
-        6: {
+        "6": {
           slots: {
             maximum: 0,
             expended: 0
@@ -1964,7 +1979,7 @@ module.exports = {
             }
           ]
         },
-        7: {
+        "7": {
           slots: {
             maximum: 0,
             expended: 0
@@ -2008,7 +2023,7 @@ module.exports = {
             }
           ]
         },
-        8: {
+        "8": {
           slots: {
             maximum: 0,
             expended: 0
@@ -2044,7 +2059,7 @@ module.exports = {
             }
           ]
         },
-        9: {
+        "9": {
           slots: {
             maximum: 0,
             expended: 0
@@ -2079,7 +2094,8 @@ module.exports = {
               prepared: false
             }
           ]
-        }
+        },
+        cantrips: ["", "", "", "", "", "", "", ""]
       }
     }
   ]
