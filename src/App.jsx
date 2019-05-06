@@ -11,6 +11,7 @@ import sheet from "./sheet.pdf";
 import character from "./character";
 import format from "./format";
 import CharacterForm from "./CharacterForm";
+import LoadingScreen from "./LoadingScreen";
 
 const socketUrl =
   process.env.NODE_ENV === "production"
@@ -35,11 +36,6 @@ async function getSheet(derp, onFinish) {
 
   function write(text, x, y, size) {
     text = String(text);
-
-    console.log("\n\n\n", "text", text, "\n\n\n");
-    console.log("\n\n\n", "x", x, "\n\n\n");
-    console.log("\n\n\n", "y", y, "\n\n\n");
-    console.log("\n\n\n", "size", size, "\n\n\n");
 
     return drawText(helveticaFont.encodeText(text), {
       x,
@@ -121,7 +117,7 @@ export default function App() {
   }, []);
 
   if (!game) {
-    return <p>"Loading..."</p>;
+    return <LoadingScreen />;
   }
 
   return (
