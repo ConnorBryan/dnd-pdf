@@ -212,11 +212,11 @@ export default function format(character) {
     const nameCoordinates = resourceCoordinates.shift();
     const numberCoordinates = resourceCoordinates.shift();
 
-    statPage.push(character.resource.name, ...nameCoordinates);
-    statPage.push(
+    statPage.push([character.resource.name, ...nameCoordinates]);
+    statPage.push([
       `${character.resource.current}/${character.resource.maximum}`,
       ...numberCoordinates
-    );
+    ]);
   }
   /* === /Resources === */
 

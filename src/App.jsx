@@ -36,6 +36,11 @@ async function getSheet(derp, onFinish) {
   function write(text, x, y, size) {
     text = String(text);
 
+    console.log("\n\n\n", "text", text, "\n\n\n");
+    console.log("\n\n\n", "x", x, "\n\n\n");
+    console.log("\n\n\n", "y", y, "\n\n\n");
+    console.log("\n\n\n", "size", size, "\n\n\n");
+
     return drawText(helveticaFont.encodeText(text), {
       x,
       y,
