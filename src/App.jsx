@@ -6,6 +6,7 @@ import {
   StandardFonts,
   drawText
 } from "pdf-lib";
+import { Grid, Container } from "semantic-ui-react";
 
 import sheet from "./sheet.pdf";
 import character from "./character";
@@ -122,7 +123,45 @@ export default function App() {
 
   return (
     <div className="App">
+      <Container fluid>
+        <Grid>
+          <Grid.Row>
+            <Grid.Column width={7}>
+              {showing && modifiedPdf && (
+                <Document
+                  file={{
+                    data: modifiedPdf
+                  }}
+                  onLoadError={error => {
+                    alert(error);
+                    alert(JSON.stringify(error));
+                  }}
+                >
+                  <Page style={{ display: "none" }} pageNumber={1} />
+                  <Page pageNumber={3} />
+                </Document>
+              )}
+            </Grid.Column>
+            <Grid.Column width={9}>
+              {isDM && showing && (
+                <CharacterForm
+                  character={activeCharacter}
+                  onSubmit={updateCharacter}
+                />
+              )}
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Container>
+
       <select
+        style={{
+          position: "fixed",
+          top: 0,
+          right: 0,
+          left: 0,
+          height: "3rem"
+        }}
         value={activeCharacterIndex}
         onChange={e => setActiveCharacterIndex(Number(e.target.value))}
       >
@@ -132,23 +171,6 @@ export default function App() {
           </option>
         ))}
       </select>
-      {showing && modifiedPdf && (
-        <Document
-          file={{
-            data: modifiedPdf
-          }}
-          onLoadError={error => {
-            alert(error);
-            alert(JSON.stringify(error));
-          }}
-        >
-          <Page pageNumber={1} />
-          <Page pageNumber={3} />
-        </Document>
-      )}
-      {isDM && showing && (
-        <CharacterForm character={activeCharacter} onSubmit={updateCharacter} />
-      )}
     </div>
   );
 }

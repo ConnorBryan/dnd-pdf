@@ -1,8 +1,9 @@
 module.exports = {
   characters: [
     {
-      name: "S'zrathis-Dren",
+      name: "S'zrathis-Dren", //
       basics: {
+        //
         class: "Monk",
         level: "4",
         background: "Hermit",
@@ -10,7 +11,7 @@ module.exports = {
         race: "Lizardfolk",
         alignment: "Neutral",
         experiencePoints: "3200"
-      },
+      }, //
       abilityScores: {
         STR: "12",
         DEX: "16",
@@ -19,9 +20,10 @@ module.exports = {
         WIS: "15",
         CHA: "8"
       },
-      inspiration: true,
-      proficiencyBonus: 3,
+      inspiration: true, //
+      proficiencyBonus: 3, //
       savingThrows: {
+        //
         STR: {
           proficient: true,
           value: "13"
@@ -121,7 +123,7 @@ module.exports = {
           value: "4"
         }
       },
-      passivePerception: "14",
+      passivePerception: "14", //
       proficiencies: {
         languages: ["Common", "Draconic", "Primordial", "", "", ""],
         tools: ["Herbalism Kit", "Leatherworker's Tools", "", "", "", ""],
@@ -129,21 +131,23 @@ module.exports = {
         weapons: ["Shortsword", "Simple Weapons", "", "", "", ""],
         armor: ["", "", "", "", "", ""]
       },
-      armorClass: 16,
-      initiative: "3",
-      speed: "40",
+      armorClass: 16, //
+      initiative: "3", //
+      speed: "40", //
       hitPoints: {
         maximum: "35",
         current: "35",
         temporary: 0
       },
       hitDice: {
+        //
         total: 5,
         die: "1d8",
         current: "4",
         maximum: "4"
       },
       deathSaves: {
+        //
         successes: "0",
         failures: "0"
       },
@@ -237,11 +241,11 @@ module.exports = {
       bonds: ["-", "-"],
       flaws: ["-", "B"],
       featuresAndTraits: {
-        race: ["A", "B"],
-        class: ["C", "D", "E"],
-        background: ["F"],
-        feat: ["G", "H"],
-        item: ["I"]
+        race: ["A", "B", "", "", ""],
+        class: ["C", "D", "E", "", "", "", "", "", "", ""],
+        background: ["F", "", ""],
+        feat: ["G", "H", "", "", ""],
+        item: ["I", "", "", "", ""]
       },
       spellcastingClass: "Ranger",
       spellcastingAbility: "WIS",
