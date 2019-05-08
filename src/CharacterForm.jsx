@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Formik, Form as FormikForm, Field, FastField } from "formik";
+import { Formik, Form as FormikForm, FastField } from "formik";
 import S from "string";
 import {
   Button,
@@ -92,7 +92,6 @@ export default function CharacterForm({
   character = emptyCharacter,
   onSubmit
 }) {
-  console.log("\n\n\n", "character", character, "\n\n\n");
   return (
     <Formik
       initialValues={character}
@@ -157,76 +156,88 @@ export default function CharacterForm({
                 <Grid.Row>
                   <Grid.Column width={16}>
                     <Grid>
+                      <Grid.Row>
+                        <Grid.Column width={8}>
+                          <CharacterSection title="Ability Scores">
+                            <CharacterInputField
+                              name="abilityScores.STR"
+                              label="STR"
+                              type="number"
+                            />
+                            <CharacterInputField
+                              name="abilityScores.DEX"
+                              label="DEX"
+                              type="number"
+                            />
+                            <CharacterInputField
+                              name="abilityScores.CON"
+                              label="CON"
+                              type="number"
+                            />
+                            <CharacterInputField
+                              name="abilityScores.INT"
+                              label="INT"
+                              type="number"
+                            />
+                            <CharacterInputField
+                              name="abilityScores.WIS"
+                              label="WIS"
+                              type="number"
+                            />
+                            <CharacterInputField
+                              name="abilityScores.CHA"
+                              label="CHA"
+                              type="number"
+                            />
+                          </CharacterSection>
+                        </Grid.Column>
+                        <Grid.Column width={8}>
+                          <CharacterSection title="Etc.">
+                            <CharacterCheckboxField
+                              name="inspiration"
+                              label="Inspiration"
+                            />
+                            <CharacterInputField
+                              name="proficiencyBonus"
+                              label="Proficiency"
+                              type="number"
+                            />
+                            <CharacterInputField
+                              name="passivePerception"
+                              label="Passive Perception"
+                              type="number"
+                            />
+                            <CharacterInputField
+                              name="armorClass"
+                              label="Armor Class"
+                              type="number"
+                            />
+                            <CharacterInputField
+                              name="initiative"
+                              label="Initiative"
+                              type="number"
+                            />
+                            <CharacterInputField
+                              name="speed"
+                              label="Speed"
+                              type="number"
+                            />
+                          </CharacterSection>
+                        </Grid.Column>
+                      </Grid.Row>
                       <Grid.Column width={8}>
-                        <Grid>
-                          <Grid.Column width={6}>
-                            <CharacterSection title="Ability Scores">
-                              <CharacterInputField
-                                name="abilityScores.STR"
-                                label="STR"
+                        <CharacterSection title="Saving Throws">
+                          {["STR", "DEX", "CON", "INT", "WIS", "CHA"].map(
+                            save => (
+                              <CharacterProficiencyField
+                                path="savingThrows"
+                                entry={save}
                                 type="number"
+                                key={save}
                               />
-                              <CharacterInputField
-                                name="abilityScores.DEX"
-                                label="DEX"
-                                type="number"
-                              />
-                              <CharacterInputField
-                                name="abilityScores.CON"
-                                label="CON"
-                                type="number"
-                              />
-                              <CharacterInputField
-                                name="abilityScores.INT"
-                                label="INT"
-                                type="number"
-                              />
-                              <CharacterInputField
-                                name="abilityScores.WIS"
-                                label="WIS"
-                                type="number"
-                              />
-                              <CharacterInputField
-                                name="abilityScores.CHA"
-                                label="CHA"
-                                type="number"
-                              />
-                            </CharacterSection>
-                          </Grid.Column>
-                          <Grid.Column width={10}>
-                            <CharacterSection title="Etc.">
-                              <CharacterCheckboxField
-                                name="inspiration"
-                                label="Inspiration"
-                              />
-                              <CharacterInputField
-                                name="proficiencyBonus"
-                                label="Proficiency"
-                                type="number"
-                              />
-                              <CharacterInputField
-                                name="passivePerception"
-                                label="Passive Perception"
-                                type="number"
-                              />
-                              <CharacterInputField
-                                name="armorClass"
-                                label="Armor Class"
-                                type="number"
-                              />
-                              <CharacterInputField
-                                name="initiative"
-                                label="Initiative"
-                                type="number"
-                              />
-                              <CharacterInputField
-                                name="speed"
-                                label="Speed"
-                                type="number"
-                              />
-                            </CharacterSection>
-                          </Grid.Column>
-                        </Grid>
+                            )
+                          )}
+                        </CharacterSection>
                       </Grid.Column>
                       <Grid.Column width={8}>
                         <CharacterSection title="Skills">
@@ -236,7 +247,7 @@ export default function CharacterForm({
                             ["insight", "intimidation", "investigation"],
                             ["medicine", "nature", "perception"],
                             ["performance", "persuasion", "religion"],
-                            ["sleoghtOfHand", "stealth", "survival"]
+                            ["sleightOfHand", "stealth", "survival"]
                           ].map(skillSet => (
                             <Form.Group key={skillSet} widths={3}>
                               {skillSet.map(skill => (
