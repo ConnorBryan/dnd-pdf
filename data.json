@@ -2,6 +2,7 @@
   "characters": [
     {
       "name": "S'zrathis-Dren",
+      "notes": "",
       "basics": {
         "class": "Monk",
         "level": "4",
@@ -786,6 +787,7 @@
     },
     {
       "name": "Albdorphis the Wyrd",
+      "notes": "",
       "basics": {
         "class": "Warlock",
         "level": "3",
@@ -1555,6 +1557,7 @@
     },
     {
       "name": "Thia Ilfakur",
+      "notes": "",
       "basics": {
         "class": "Ranger",
         "level": 6,
@@ -2333,6 +2336,7 @@
     },
     {
       "name": "Aelar",
+      "notes": "",
       "basics": {
         "class": "Monk",
         "level": 6,
@@ -3111,6 +3115,7 @@
     },
     {
       "name": "Legolas",
+      "notes": "How did you determine AC?\nWhy did you think your had 2 Action Surges?",
       "basics": {
         "class": "Fighter",
         "level": 6,

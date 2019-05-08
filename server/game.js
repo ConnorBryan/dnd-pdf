@@ -2,6 +2,7 @@ module.exports = {
   characters: [
     {
       name: "S'zrathis-Dren",
+      notes: "",
       basics: {
         class: "Monk",
         level: "4",
@@ -20,6 +21,7 @@ module.exports = {
         CHA: "8"
       },
       inspiration: true,
+      condition: "Normal",
       proficiencyBonus: 3,
       savingThrows: {
         STR: {
@@ -697,6 +699,7 @@ module.exports = {
     },
     {
       name: "Albdorphis the Wyrd",
+      notes: "",
       basics: {
         class: "Warlock",
         level: "3",
@@ -715,6 +718,7 @@ module.exports = {
         CHA: "17"
       },
       inspiration: true,
+      condition: "Normal",
       proficiencyBonus: "2",
       savingThrows: {
         STR: {
@@ -1405,6 +1409,7 @@ module.exports = {
     },
     {
       name: "Thia Ilfakur",
+      notes: "",
       basics: {
         class: "Ranger",
         level: 6,
@@ -1423,6 +1428,7 @@ module.exports = {
         CHA: 8
       },
       inspiration: false,
+      condition: "Normal",
       proficiencyBonus: 3,
       savingThrows: {
         STR: {
@@ -2120,6 +2126,7 @@ module.exports = {
     },
     {
       name: "Aelar",
+      notes: "",
       basics: {
         class: "Monk",
         level: 6,
@@ -2138,6 +2145,7 @@ module.exports = {
         CHA: 8
       },
       inspiration: false,
+      condition: "Normal",
       proficiencyBonus: 3,
       savingThrows: {
         STR: {
@@ -2842,6 +2850,8 @@ module.exports = {
     },
     {
       name: "Legolas",
+      notes:
+        "How did you determine AC?\nWhy did you think your had 2 Action Surges?",
       basics: {
         class: "Fighter",
         level: 6,
@@ -2860,6 +2870,7 @@ module.exports = {
         CHA: 10
       },
       inspiration: false,
+      condition: "Normal",
       proficiencyBonus: 3,
       savingThrows: {
         STR: {

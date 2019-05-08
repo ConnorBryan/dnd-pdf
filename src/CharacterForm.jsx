@@ -8,7 +8,8 @@ import {
   Form,
   Grid,
   Header,
-  Segment
+  Segment,
+  TextArea
 } from "semantic-ui-react";
 
 import emptyCharacter from "./character";
@@ -155,6 +156,23 @@ export default function CharacterForm({
                 </Grid.Row>
                 <Grid.Row>
                   <Grid.Column width={16}>
+                    <CharacterSection title="Notes">
+                      <FastField
+                        name="notes"
+                        render={({ field, form }) => (
+                          <TextArea
+                            {...field}
+                            onChange={e =>
+                              form.setFieldValue(field.name, e.target.value)
+                            }
+                          />
+                        )}
+                      />
+                    </CharacterSection>
+                  </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                  <Grid.Column width={16}>
                     <Grid>
                       <Grid.Row>
                         <Grid.Column width={8}>
@@ -196,6 +214,10 @@ export default function CharacterForm({
                             <CharacterCheckboxField
                               name="inspiration"
                               label="Inspiration"
+                            />
+                            <CharacterInputField
+                              name="condition"
+                              label="Condition"
                             />
                             <CharacterInputField
                               name="proficiencyBonus"

@@ -6,7 +6,15 @@ import {
   StandardFonts,
   drawText
 } from "pdf-lib";
-import { Grid, Card, Container, Segment, Header } from "semantic-ui-react";
+import {
+  Grid,
+  Card,
+  Container,
+  Divider,
+  Segment,
+  Header,
+  TextArea
+} from "semantic-ui-react";
 
 import races from "./data/races";
 import backgroundData from "./data/backgrounds";
@@ -203,7 +211,7 @@ export default function App() {
       <Container fluid>
         <Grid>
           <Grid.Row>
-            <Grid.Column width={7}>
+            <Grid.Column width={isDM ? 7 : 16} centered>
               {showing && modifiedPdf && (
                 <>
                   <Document
@@ -219,34 +227,20 @@ export default function App() {
                     <Page pageNumber={3} />
                   </Document>
 
-                  <Segment>
-                    <Header as="h2">Race: {activeCharacter.basics.race}</Header>
-                    {raceEntries.map(({ header, description }) => (
-                      <Card
-                        fluid
-                        key={header}
-                        header={header}
-                        description={description}
-                      />
-                    ))}
-                  </Segment>
-                  <Segment>
-                    <Header as="h2">
-                      Background: {activeCharacter.basics.background}
-                    </Header>
-                    {backgroundEntries.map(({ header, description }) => (
-                      <Card
-                        fluid
-                        key={header}
-                        header={header}
-                        description={description}
-                      />
-                    ))}
-                  </Segment>
-                  {itemEntries.length > 0 && (
+                  <Container fluid>
+                    <Segment className="form">
+                      <Header as="h2">
+                        Condition: {activeCharacter.condition}
+                      </Header>
+                      <Divider />
+                      <Header as="h2">Notes</Header>
+                      <TextArea value={activeCharacter.notes} />
+                    </Segment>
                     <Segment>
-                      <Header as="h2">Items</Header>
-                      {itemEntries.map(({ header, description }) => (
+                      <Header as="h2">
+                        Race: {activeCharacter.basics.race}
+                      </Header>
+                      {raceEntries.map(({ header, description }) => (
                         <Card
                           fluid
                           key={header}
@@ -255,18 +249,44 @@ export default function App() {
                         />
                       ))}
                     </Segment>
-                  )}
+                    <Segment>
+                      <Header as="h2">
+                        Background: {activeCharacter.basics.background}
+                      </Header>
+                      {backgroundEntries.map(({ header, description }) => (
+                        <Card
+                          fluid
+                          key={header}
+                          header={header}
+                          description={description}
+                        />
+                      ))}
+                    </Segment>
+                    {itemEntries.length > 0 && (
+                      <Segment>
+                        <Header as="h2">Items</Header>
+                        {itemEntries.map(({ header, description }) => (
+                          <Card
+                            fluid
+                            key={header}
+                            header={header}
+                            description={description}
+                          />
+                        ))}
+                      </Segment>
+                    )}
+                  </Container>
                 </>
               )}
             </Grid.Column>
-            <Grid.Column width={9}>
-              {isDM && showing && (
+            {isDM && showing && (
+              <Grid.Column width={9}>
                 <CharacterForm
                   character={activeCharacter}
                   onSubmit={updateCharacter}
                 />
-              )}
-            </Grid.Column>
+              </Grid.Column>
+            )}
           </Grid.Row>
         </Grid>
       </Container>
