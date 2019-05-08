@@ -1,11 +1,11 @@
 {
   "characters": [
     {
-      "name": "Daniel",
+      "name": "S'zrathis-Dren",
       "basics": {
         "class": "Monk",
         "level": "4",
-        "background": "Hermit",
+        "background": "Far Traveler",
         "player": "Dave",
         "race": "Lizardfolk",
         "alignment": "Neutral",
@@ -54,7 +54,7 @@
         },
         "animalHandling": {
           "proficient": false,
-          "value": 1
+          "value": "2"
         },
         "arcana": {
           "proficient": false,
@@ -140,8 +140,8 @@
           ""
         ],
         "instruments": [
-          "French Horn",
-          "Flute",
+          "",
+          "",
           "",
           "",
           "",
@@ -169,7 +169,7 @@
       "speed": "40",
       "hitPoints": {
         "maximum": "35",
-        "current": 22,
+        "current": "35",
         "temporary": 0
       },
       "hitDice": {
@@ -179,7 +179,7 @@
         "maximum": "4"
       },
       "deathSaves": {
-        "successes": 0,
+        "successes": "0",
         "failures": "0"
       },
       "attacksAndSpellcasting": [
@@ -259,21 +259,21 @@
           "quantity": "1"
         },
         {
-          "name": "Bowl",
+          "name": "Dungeoneer's Pack",
           "quantity": "1"
         },
         {
-          "name": "",
-          "quantity": ""
+          "name": "Boots of Levitation",
+          "quantity": 1
         }
       ],
       "personalityTraits": [
-        "A",
-        "B"
+        "-",
+        "-"
       ],
       "ideals": [
-        "A",
-        "B"
+        "-",
+        "-"
       ],
       "bonds": [
         "-",
@@ -286,25 +286,44 @@
       "featuresAndTraits": {
         "race": [
           "A",
-          "B"
+          "B",
+          "",
+          "",
+          ""
         ],
         "class": [
           "C",
           "D",
-          "E"
+          "E",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "background": [
-          "F"
+          "F",
+          "",
+          ""
         ],
         "feat": [
           "G",
-          "H"
+          "H",
+          "",
+          "",
+          ""
         ],
         "item": [
-          "I"
+          "I",
+          "",
+          "",
+          "",
+          ""
         ]
       },
-      "spellcastingClass": "Ranger2",
+      "spellcastingClass": "Ranger",
       "spellcastingAbility": "WIS",
       "spellSaveDc": 13,
       "spellAttackBonus": 5,
@@ -754,7 +773,7 @@
           ]
         },
         "cantrips": [
-          "Test",
+          "",
           "",
           "",
           "",
@@ -763,18 +782,7 @@
           "",
           ""
         ]
-      },
-      "spellsKnows": [
-        null,
-        {
-          "spells": [
-            {
-              "prepared": true,
-              "name": "A"
-            }
-          ]
-        }
-      ]
+      }
     },
     {
       "name": "Albdorphis the Wyrd",
@@ -1150,7 +1158,7 @@
         "2": {
           "slots": {
             "maximum": 1,
-            "expended": 0
+            "expended": 1
           },
           "spells": [
             {

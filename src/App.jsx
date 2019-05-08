@@ -6,8 +6,11 @@ import {
   StandardFonts,
   drawText
 } from "pdf-lib";
-import { Grid, Container } from "semantic-ui-react";
+import { Grid, Card, Container, Segment, Header } from "semantic-ui-react";
 
+import races from "./data/races";
+import backgroundData from "./data/backgrounds";
+import itemData from "./data/items";
 import sheet from "./sheet.pdf";
 import character from "./character";
 import format from "./format";
@@ -55,6 +58,71 @@ async function getSheet(derp, onFinish) {
   spellPage.addContentStreams(pdfDoc.register(spellPageContentStream));
 
   onFinish(PDFDocumentWriter.saveToBytes(pdfDoc));
+}
+
+function getBackgroundEntries(background) {
+  const { background: backgroundList } = backgroundData;
+  const entry = backgroundList.find(x => x.name === background);
+
+  if (!entry) {
+    throw new Error(`Invalid background: ${background}`);
+  }
+
+  const entries = entry.entries.filter(({ name = "" }) =>
+    name.includes("Feature")
+  );
+
+  return entries.map(x => ({
+    header: x.name.replace(/Feature: /g, ""),
+    description: x.entries.concat("\n")
+  }));
+}
+
+function getRaceEntries(race) {
+  if (race.split(" ").length > 1) {
+    race = race.split(" ")[1];
+  }
+
+  const { race: raceList } = races;
+  const entry = raceList.find(x => x.name === race);
+
+  if (!entry) {
+    throw new Error(`Invalid race: ${race}`);
+  }
+
+  return entry.entries.map(entry => ({
+    header: entry.name,
+    description: entry.entries.concat("\n")
+  }));
+}
+
+function getItemEntries(character) {
+  const lookup = itemData.item.reduce((prev, next) => {
+    prev[next.name] = next;
+    return prev;
+  }, {});
+
+  return character.equipment
+    .map(item => {
+      const entry = lookup[item.name];
+
+      if (entry && entry.entries) {
+        return {
+          header: entry.name,
+          description: entry.entries
+            .map(x => {
+              return typeof x === "string"
+                ? x
+                : x.type === "list"
+                ? x.items.concat(<br />)
+                : null;
+            })
+            .filter(Boolean)
+            .concat("\n")
+        };
+      }
+    })
+    .filter(Boolean);
 }
 
 export default function App() {
@@ -121,6 +189,15 @@ export default function App() {
     return <LoadingScreen />;
   }
 
+  // ---
+  const raceEntries = getRaceEntries(activeCharacter.basics.race);
+  const backgroundEntries = getBackgroundEntries(
+    activeCharacter.basics.background
+  );
+  const itemEntries = getItemEntries(activeCharacter);
+
+  // ---
+
   return (
     <div className="App">
       <Container fluid>
@@ -128,18 +205,58 @@ export default function App() {
           <Grid.Row>
             <Grid.Column width={7}>
               {showing && modifiedPdf && (
-                <Document
-                  file={{
-                    data: modifiedPdf
-                  }}
-                  onLoadError={error => {
-                    alert(error);
-                    alert(JSON.stringify(error));
-                  }}
-                >
-                  <Page style={{ display: "none" }} pageNumber={1} />
-                  <Page pageNumber={3} />
-                </Document>
+                <>
+                  <Document
+                    file={{
+                      data: modifiedPdf
+                    }}
+                    onLoadError={error => {
+                      alert(error);
+                      alert(JSON.stringify(error));
+                    }}
+                  >
+                    <Page style={{ display: "none" }} pageNumber={1} />
+                    <Page pageNumber={3} />
+                  </Document>
+
+                  <Segment>
+                    <Header as="h2">Race: {activeCharacter.basics.race}</Header>
+                    {raceEntries.map(({ header, description }) => (
+                      <Card
+                        fluid
+                        key={header}
+                        header={header}
+                        description={description}
+                      />
+                    ))}
+                  </Segment>
+                  <Segment>
+                    <Header as="h2">
+                      Background: {activeCharacter.basics.background}
+                    </Header>
+                    {backgroundEntries.map(({ header, description }) => (
+                      <Card
+                        fluid
+                        key={header}
+                        header={header}
+                        description={description}
+                      />
+                    ))}
+                  </Segment>
+                  {itemEntries.length > 0 && (
+                    <Segment>
+                      <Header as="h2">Items</Header>
+                      {itemEntries.map(({ header, description }) => (
+                        <Card
+                          fluid
+                          key={header}
+                          header={header}
+                          description={description}
+                        />
+                      ))}
+                    </Segment>
+                  )}
+                </>
               )}
             </Grid.Column>
             <Grid.Column width={9}>
