@@ -394,23 +394,21 @@ export default function CharacterForm({
                           <Divider />
                         </>
                       ))}
-                      <Form.Group widths={2}>
+                      <Form.Group widths={3}>
                         <CharacterInputField
                           name="resource.name"
                           label="Resource"
                         />
-                        <Form.Group widths={2}>
-                          <CharacterInputField
-                            name="resource.maximum"
-                            label="Maximum"
-                            type="number"
-                          />
-                          <CharacterInputField
-                            name="resource.current"
-                            label="Current"
-                            type="number"
-                          />
-                        </Form.Group>
+                        <CharacterInputField
+                          name="resource.maximum"
+                          label="Maximum"
+                          type="number"
+                        />
+                        <CharacterInputField
+                          name="resource.current"
+                          label="Current"
+                          type="number"
+                        />
                       </Form.Group>
                     </CharacterSection>
                   </Grid.Column>
