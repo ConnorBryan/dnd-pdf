@@ -24,6 +24,7 @@ import character from "./character";
 import format from "./format";
 import CharacterForm from "./CharacterForm";
 import LoadingScreen from "./LoadingScreen";
+import CharacterView from "./CharacterView";
 
 const socketUrl =
   process.env.NODE_ENV === "production"
@@ -138,17 +139,17 @@ export default function App() {
   const [game, setGame] = useState(null);
   const [activeCharacterIndex, setActiveCharacterIndex] = useState(0);
   const [modifiedPdf, setModifiedPdf] = useState(null);
-  const [showing, setShowing] = useState(true);
+  // const [showing, setShowing] = useState(true);
   const activeCharacter = game
     ? game.characters[activeCharacterIndex]
     : character;
-  let timeout;
+  // let timeout;
 
-  function reload() {
-    clearTimeout(timeout);
-    setShowing(false);
-    timeout = setTimeout(() => setShowing(true), 250);
-  }
+  // function reload() {
+  //   clearTimeout(timeout);
+  //   setShowing(false);
+  //   timeout = setTimeout(() => setShowing(true), 250);
+  // }
 
   function updateGame(newGame) {
     socket.send(
@@ -170,14 +171,14 @@ export default function App() {
     updateGame(newGame);
   }
 
-  useEffect(() => {
-    getSheet(activeCharacter, setModifiedPdf).then(reload);
-  }, [activeCharacter, game]);
+  // useEffect(() => {
+  //   getSheet(activeCharacter, setModifiedPdf).then(reload);
+  // }, [activeCharacter, game]);
 
   useEffect(() => {
     socket.onmessage = ({ data }) => {
       setGame(JSON.parse(data));
-      getSheet(activeCharacter, setModifiedPdf).then(reload);
+      // getSheet(activeCharacter, setModifiedPdf).then(reload);
     };
 
     setTimeout(
@@ -205,6 +206,71 @@ export default function App() {
   const itemEntries = getItemEntries(activeCharacter);
 
   // ---
+  const extras = (
+    <Container fluid>
+      <Segment className="form">
+        <Header as="h2">Condition: {activeCharacter.condition}</Header>
+        <Divider />
+        <Header as="h2">Notes</Header>
+        <TextArea value={activeCharacter.notes} />
+      </Segment>
+      <Segment>
+        <Header as="h2">Race: {activeCharacter.basics.race}</Header>
+        {raceEntries.map(({ header, description }) => (
+          <Card fluid key={header} header={header} description={description} />
+        ))}
+      </Segment>
+      <Segment>
+        <Header as="h2">Background: {activeCharacter.basics.background}</Header>
+        {backgroundEntries.map(({ header, description }) => (
+          <Card fluid key={header} header={header} description={description} />
+        ))}
+      </Segment>
+      {itemEntries.length > 0 && (
+        <Segment>
+          <Header as="h2">Items</Header>
+          {itemEntries.map(({ header, description }) => (
+            <Card
+              fluid
+              key={header}
+              header={header}
+              description={description}
+            />
+          ))}
+        </Segment>
+      )}
+    </Container>
+  );
+  const select = (
+    <select
+      style={{
+        position: "fixed",
+        top: 0,
+        right: 0,
+        left: 0,
+        height: "3rem"
+      }}
+      value={activeCharacterIndex}
+      onChange={e => setActiveCharacterIndex(Number(e.target.value))}
+    >
+      {game.characters.map((char, index) => (
+        <option key={index} value={index}>
+          {char.name}
+        </option>
+      ))}
+    </select>
+  );
+  // ---
+
+  if (!isDM) {
+    return (
+      <>
+        {select}
+        <CharacterView character={activeCharacter} />
+        {extras}
+      </>
+    );
+  }
 
   return (
     <div className="App">
@@ -212,74 +278,10 @@ export default function App() {
         <Grid>
           <Grid.Row>
             <Grid.Column width={isDM ? 7 : 16} centered>
-              {showing && modifiedPdf && (
-                <>
-                  <Document
-                    file={{
-                      data: modifiedPdf
-                    }}
-                    onLoadError={error => {
-                      alert(error);
-                      alert(JSON.stringify(error));
-                    }}
-                  >
-                    <Page style={{ display: "none" }} pageNumber={1} />
-                    <Page pageNumber={3} />
-                  </Document>
-
-                  <Container fluid>
-                    <Segment className="form">
-                      <Header as="h2">
-                        Condition: {activeCharacter.condition}
-                      </Header>
-                      <Divider />
-                      <Header as="h2">Notes</Header>
-                      <TextArea value={activeCharacter.notes} />
-                    </Segment>
-                    <Segment>
-                      <Header as="h2">
-                        Race: {activeCharacter.basics.race}
-                      </Header>
-                      {raceEntries.map(({ header, description }) => (
-                        <Card
-                          fluid
-                          key={header}
-                          header={header}
-                          description={description}
-                        />
-                      ))}
-                    </Segment>
-                    <Segment>
-                      <Header as="h2">
-                        Background: {activeCharacter.basics.background}
-                      </Header>
-                      {backgroundEntries.map(({ header, description }) => (
-                        <Card
-                          fluid
-                          key={header}
-                          header={header}
-                          description={description}
-                        />
-                      ))}
-                    </Segment>
-                    {itemEntries.length > 0 && (
-                      <Segment>
-                        <Header as="h2">Items</Header>
-                        {itemEntries.map(({ header, description }) => (
-                          <Card
-                            fluid
-                            key={header}
-                            header={header}
-                            description={description}
-                          />
-                        ))}
-                      </Segment>
-                    )}
-                  </Container>
-                </>
-              )}
+              {isDM && <CharacterView character={activeCharacter} />}
+              {extras}
             </Grid.Column>
-            {isDM && showing && (
+            {isDM && (
               <Grid.Column width={9}>
                 <CharacterForm
                   character={activeCharacter}
@@ -291,23 +293,7 @@ export default function App() {
         </Grid>
       </Container>
 
-      <select
-        style={{
-          position: "fixed",
-          top: 0,
-          right: 0,
-          left: 0,
-          height: "3rem"
-        }}
-        value={activeCharacterIndex}
-        onChange={e => setActiveCharacterIndex(Number(e.target.value))}
-      >
-        {game.characters.map((char, index) => (
-          <option key={index} value={index}>
-            {char.name}
-          </option>
-        ))}
-      </select>
+      {select}
     </div>
   );
 }

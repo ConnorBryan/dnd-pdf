@@ -9,6 +9,7 @@ export default {
     alignment: "Neutral",
     experiencePoints: "10000"
   },
+  notes: "Paralyzed",
   abilityScores: {
     STR: 12,
     DEX: 10,

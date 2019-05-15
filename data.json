@@ -5,7 +5,7 @@
       "notes": "",
       "basics": {
         "class": "Monk",
-        "level": "4",
+        "level": 5,
         "background": "Outlander",
         "player": "Dave",
         "race": "Lizardfolk",
@@ -21,6 +21,7 @@
         "CHA": "8"
       },
       "inspiration": true,
+      "condition": "Normal",
       "proficiencyBonus": 3,
       "savingThrows": {
         "STR": {
@@ -50,7 +51,7 @@
       },
       "skills": {
         "acrobatics": {
-          "proficient": true,
+          "proficient": false,
           "value": "5"
         },
         "animalHandling": {
@@ -806,6 +807,7 @@
         "CHA": "17"
       },
       "inspiration": true,
+      "condition": "Normal",
       "proficiencyBonus": "2",
       "savingThrows": {
         "STR": {
@@ -1576,6 +1578,7 @@
         "CHA": 8
       },
       "inspiration": false,
+      "condition": "Normal",
       "proficiencyBonus": 3,
       "savingThrows": {
         "STR": {
@@ -2355,6 +2358,7 @@
         "CHA": 8
       },
       "inspiration": false,
+      "condition": "Normal",
       "proficiencyBonus": 3,
       "savingThrows": {
         "STR": {
@@ -3134,6 +3138,7 @@
         "CHA": 10
       },
       "inspiration": false,
+      "condition": "Normal",
       "proficiencyBonus": 3,
       "savingThrows": {
         "STR": {

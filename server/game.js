@@ -2,7 +2,7 @@ module.exports = {
   characters: [
     {
       name: "S'zrathis-Dren",
-      notes: "",
+      notes: "Ayy",
       basics: {
         class: "Monk",
         level: "4",
@@ -3134,7 +3134,7 @@ module.exports = {
             },
             {
               name: "",
-              prepared: true
+              prepared: false
             },
             {
               name: "",
