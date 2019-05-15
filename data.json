@@ -5,7 +5,7 @@
       "notes": "",
       "basics": {
         "class": "Monk",
-        "level": 5,
+        "level": "4",
         "background": "Outlander",
         "player": "Dave",
         "race": "Lizardfolk",
@@ -51,7 +51,7 @@
       },
       "skills": {
         "acrobatics": {
-          "proficient": false,
+          "proficient": true,
           "value": "5"
         },
         "animalHandling": {
@@ -125,46 +125,11 @@
       },
       "passivePerception": "14",
       "proficiencies": {
-        "languages": [
-          "Common",
-          "Draconic",
-          "Primordial",
-          "",
-          "",
-          ""
-        ],
-        "tools": [
-          "Herbalism Kit",
-          "Leatherworker's Tools",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "instruments": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "weapons": [
-          "Shortsword",
-          "Simple Weapons",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "armor": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ]
+        "languages": ["Common", "Draconic", "Primordial", "", "", ""],
+        "tools": ["Herbalism Kit", "Leatherworker's Tools", "", "", "", ""],
+        "instruments": ["", "", "", "", "", ""],
+        "weapons": ["Shortsword", "Simple Weapons", "", "", "", ""],
+        "armor": ["", "", "", "", "", ""]
       },
       "armorClass": 16,
       "initiative": "3",
@@ -269,61 +234,16 @@
           "quantity": ""
         }
       ],
-      "personalityTraits": [
-        "-",
-        "-"
-      ],
-      "ideals": [
-        "-",
-        "-"
-      ],
-      "bonds": [
-        "-",
-        "-"
-      ],
-      "flaws": [
-        "-",
-        "B"
-      ],
+      "personalityTraits": ["-", "-"],
+      "ideals": ["-", "-"],
+      "bonds": ["-", "-"],
+      "flaws": ["-", "B"],
       "featuresAndTraits": {
-        "race": [
-          "A",
-          "B",
-          "",
-          "",
-          ""
-        ],
-        "class": [
-          "C",
-          "D",
-          "E",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "background": [
-          "F",
-          "",
-          ""
-        ],
-        "feat": [
-          "G",
-          "H",
-          "",
-          "",
-          ""
-        ],
-        "item": [
-          "I",
-          "",
-          "",
-          "",
-          ""
-        ]
+        "race": ["A", "B", "", "", ""],
+        "class": ["C", "D", "E", "", "", "", "", "", "", ""],
+        "background": ["F", "", ""],
+        "feat": ["G", "H", "", "", ""],
+        "item": ["I", "", "", "", ""]
       },
       "spellcastingClass": "Ranger",
       "spellcastingAbility": "WIS",
@@ -774,16 +694,7 @@
             }
           ]
         },
-        "cantrips": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ]
+        "cantrips": ["", "", "", "", "", "", "", ""]
       }
     },
     {
@@ -911,46 +822,11 @@
       },
       "passivePerception": 12,
       "proficiencies": {
-        "languages": [
-          "Common",
-          "Infernal",
-          "Sylvan",
-          "",
-          "",
-          ""
-        ],
-        "tools": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "instruments": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "weapons": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "armor": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ]
+        "languages": ["Common", "Infernal", "Sylvan", "", "", ""],
+        "tools": ["", "", "", "", "", ""],
+        "instruments": ["", "", "", "", "", ""],
+        "weapons": ["", "", "", "", "", ""],
+        "armor": ["", "", "", "", "", ""]
       },
       "armorClass": "11",
       "initiative": "1",
@@ -1055,42 +931,16 @@
           "quantity": ""
         }
       ],
-      "personalityTraits": [
-        "Enjoys the fey.",
-        "Hates to bathe."
-      ],
-      "ideals": [
-        "Follows a Satyr prince.",
-        "Enjoys helping others."
-      ],
-      "bonds": [
-        "Fey sprite.",
-        "  "
-      ],
-      "flaws": [
-        "Gambling addiction.",
-        "B"
-      ],
+      "personalityTraits": ["Enjoys the fey.", "Hates to bathe."],
+      "ideals": ["Follows a Satyr prince.", "Enjoys helping others."],
+      "bonds": ["Fey sprite.", "  "],
+      "flaws": ["Gambling addiction.", "B"],
       "featuresAndTraits": {
-        "race": [
-          "A",
-          "B"
-        ],
-        "class": [
-          "C",
-          "D",
-          "E"
-        ],
-        "background": [
-          "F"
-        ],
-        "feat": [
-          "G",
-          "H"
-        ],
-        "item": [
-          "I"
-        ]
+        "race": ["A", "B"],
+        "class": ["C", "D", "E"],
+        "background": ["F"],
+        "feat": ["G", "H"],
+        "item": ["I"]
       },
       "spellcastingClass": "Warlock",
       "spellcastingAbility": "CHA",
@@ -1567,7 +1417,7 @@
         "player": "Elena",
         "race": "Wood Elf",
         "alignment": "Neutral",
-        "experiencePoints": 14000
+        "experiencePoints": 14300
       },
       "abilityScores": {
         "STR": 10,
@@ -1578,7 +1428,7 @@
         "CHA": 8
       },
       "inspiration": false,
-      "condition": "Normal",
+      "condition": "Splattered with Worm Guts",
       "proficiencyBonus": 3,
       "savingThrows": {
         "STR": {
@@ -1685,53 +1535,18 @@
       },
       "passivePerception": 12,
       "proficiencies": {
-        "languages": [
-          "Common",
-          "Elvish",
-          "Draconic",
-          "",
-          "",
-          ""
-        ],
-        "tools": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "instruments": [
-          "Viola",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "weapons": [
-          "Simple",
-          "Martial",
-          "Bows",
-          "XBows",
-          "",
-          ""
-        ],
-        "armor": [
-          "Light",
-          "Medium",
-          "Shields",
-          "",
-          "",
-          ""
-        ]
+        "languages": ["Common", "Elvish", "Draconic", "Deep Speech", "", ""],
+        "tools": ["", "", "", "", "", ""],
+        "instruments": ["Viola", "", "", "", "", ""],
+        "weapons": ["Simple", "Martial", "Bows", "XBows", "", ""],
+        "armor": ["Light", "Medium", "Shields", "", "", ""]
       },
       "armorClass": 17,
       "initiative": 3,
       "speed": 35,
       "hitPoints": {
         "maximum": 42,
-        "current": 42,
+        "current": 34,
         "temporary": 0
       },
       "hitDice": {
@@ -1766,7 +1581,7 @@
         "maximum": "",
         "current": ""
       },
-      "gold": 400,
+      "gold": 425,
       "equipment": [
         {
           "name": "Scale Mail",
@@ -1829,22 +1644,10 @@
           "quantity": ""
         }
       ],
-      "personalityTraits": [
-        "",
-        ""
-      ],
-      "ideals": [
-        "",
-        ""
-      ],
-      "bonds": [
-        "",
-        "  "
-      ],
-      "flaws": [
-        "",
-        ""
-      ],
+      "personalityTraits": ["", ""],
+      "ideals": ["", ""],
+      "bonds": ["", "  "],
+      "flaws": ["", ""],
       "featuresAndTraits": {
         "race": [
           "Darkvision - 60'",
@@ -1858,19 +1661,12 @@
           "Beastmaster: Eagle",
           "Primeval Awareness",
           "Extra Attack",
-          "Favored Terrain: Forest",
-          "Favored Enemy: Hob/goblin"
+          "Favored Terrain: Forest/Grassland",
+          "Favored Enemy: Hob/goblin/Aberrations"
         ],
-        "background": [
-          "Wanderer"
-        ],
-        "feat": [
-          "Crossbow Expert",
-          ""
-        ],
-        "item": [
-          ""
-        ]
+        "background": ["Wanderer"],
+        "feat": ["Crossbow Expert", ""],
+        "item": [""]
       },
       "spellcastingClass": "Ranger",
       "spellcastingAbility": "WIS",
@@ -2325,16 +2121,7 @@
             }
           ]
         },
-        "cantrips": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ]
+        "cantrips": ["", "", "", "", "", "", "", ""]
       }
     },
     {
@@ -2347,7 +2134,7 @@
         "player": "Seth",
         "race": "Wood Elf",
         "alignment": "Lawful Neutral",
-        "experiencePoints": 14000
+        "experiencePoints": 14300
       },
       "abilityScores": {
         "STR": 12,
@@ -2358,7 +2145,7 @@
         "CHA": 8
       },
       "inspiration": false,
-      "condition": "Normal",
+      "condition": "Splattered with Worm Guts",
       "proficiencyBonus": 3,
       "savingThrows": {
         "STR": {
@@ -2465,30 +2252,9 @@
       },
       "passivePerception": 12,
       "proficiencies": {
-        "languages": [
-          "Common",
-          "Elvish",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "tools": [
-          "Calligrapher's Tools",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "instruments": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
+        "languages": ["Common", "Elvish", "", "", "", ""],
+        "tools": ["Calligrapher's Tools", "", "", "", "", ""],
+        "instruments": ["", "", "", "", "", ""],
         "weapons": [
           "Simple",
           "Short Swords",
@@ -2497,21 +2263,14 @@
           "Longbow",
           ""
         ],
-        "armor": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ]
+        "armor": ["", "", "", "", "", ""]
       },
       "armorClass": 16,
       "initiative": 4,
       "speed": 50,
       "hitPoints": {
         "maximum": 39,
-        "current": 39,
+        "current": 38,
         "temporary": 0
       },
       "hitDice": {
@@ -2546,7 +2305,7 @@
         "maximum": 6,
         "current": 6
       },
-      "gold": 600,
+      "gold": 625,
       "equipment": [
         {
           "name": "Small Knife",
@@ -2609,22 +2368,10 @@
           "quantity": ""
         }
       ],
-      "personalityTraits": [
-        "Squeeze into small places.",
-        ""
-      ],
-      "ideals": [
-        "Change.",
-        ""
-      ],
-      "bonds": [
-        "Town.",
-        "  "
-      ],
-      "flaws": [
-        "Kleptomania.",
-        ""
-      ],
+      "personalityTraits": ["Squeeze into small places.", ""],
+      "ideals": ["Change.", ""],
+      "bonds": ["Town.", "  "],
+      "flaws": ["Kleptomania.", ""],
       "featuresAndTraits": {
         "race": [
           "Darkvision - 60'",
@@ -2639,18 +2386,13 @@
           "Unarmored Movement",
           "Monastic Tradition: <which>",
           "Slow Fall",
-          "Ki-Empowered Strikes"
+          "Ki-Empowered Strikes",
+          "Shadow Step",
+          "Extra Attack"
         ],
-        "background": [
-          "City Secrets"
-        ],
-        "feat": [
-          "",
-          ""
-        ],
-        "item": [
-          ""
-        ]
+        "background": ["City Secrets"],
+        "feat": ["", ""],
+        "item": [""]
       },
       "spellcastingClass": "",
       "spellcastingAbility": "",
@@ -3105,16 +2847,7 @@
             }
           ]
         },
-        "cantrips": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ]
+        "cantrips": ["", "", "", "", "", "", "", ""]
       }
     },
     {
@@ -3127,7 +2860,7 @@
         "player": "Jared",
         "race": "Wood Elf",
         "alignment": "Neutral",
-        "experiencePoints": 14000
+        "experiencePoints": 14300
       },
       "abilityScores": {
         "STR": "8",
@@ -3138,7 +2871,7 @@
         "CHA": 10
       },
       "inspiration": false,
-      "condition": "Normal",
+      "condition": "Splattered with Worm Guts",
       "proficiencyBonus": 3,
       "savingThrows": {
         "STR": {
@@ -3242,50 +2975,15 @@
       },
       "passivePerception": 14,
       "proficiencies": {
-        "languages": [
-          "Common",
-          "Dwarvish",
-          "Elvish",
-          "",
-          "",
-          ""
-        ],
-        "tools": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "instruments": [
-          "Pan Flute",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "weapons": [
-          "Simple",
-          "Martial",
-          "",
-          "",
-          "",
-          ""
-        ],
-        "armor": [
-          "Light",
-          "Medium",
-          "Heavy",
-          "Shields",
-          "",
-          ""
-        ]
+        "languages": ["Common", "Dwarvish", "Elvish", "", "", ""],
+        "tools": ["", "", "", "", "", ""],
+        "instruments": ["Pan Flute", "", "", "", "", ""],
+        "weapons": ["Simple", "Martial", "", "", "", ""],
+        "armor": ["Light", "Medium", "Heavy", "Shields", "", ""]
       },
-      "armorClass": 18,
+      "armorClass": 17,
       "initiative": 3,
-      "speed": 35,
+      "speed": 25,
       "hitPoints": {
         "maximum": 46,
         "current": 46,
@@ -3323,7 +3021,7 @@
         "maximum": 1,
         "current": 1
       },
-      "gold": 400,
+      "gold": 418,
       "equipment": [
         {
           "name": "Chain Mail",
@@ -3386,22 +3084,10 @@
           "quantity": ""
         }
       ],
-      "personalityTraits": [
-        "",
-        ""
-      ],
-      "ideals": [
-        "",
-        ""
-      ],
-      "bonds": [
-        "",
-        "  "
-      ],
-      "flaws": [
-        "",
-        ""
-      ],
+      "personalityTraits": ["", ""],
+      "ideals": ["", ""],
+      "bonds": ["", "  "],
+      "flaws": ["", ""],
       "featuresAndTraits": {
         "race": [
           "Darkvision - 60'",
@@ -3416,16 +3102,9 @@
           "Martial Archetype: Eldritch Knight",
           "Extra Attack"
         ],
-        "background": [
-          "Wanderer"
-        ],
-        "feat": [
-          "Crossbow Expert",
-          ""
-        ],
-        "item": [
-          ""
-        ]
+        "background": ["Wanderer"],
+        "feat": ["Crossbow Expert", ""],
+        "item": [""]
       },
       "spellcastingClass": "Eldritch Knight",
       "spellcastingAbility": "INT",
@@ -3435,7 +3114,7 @@
         "1": {
           "slots": {
             "maximum": 3,
-            "expended": 0
+            "expended": 1
           },
           "spells": [
             {
@@ -3880,16 +3559,7 @@
             }
           ]
         },
-        "cantrips": [
-          "Fire Bolt",
-          "Minor Illusion",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
-        ]
+        "cantrips": ["Fire Bolt", "Minor Illusion", "", "", "", "", "", ""]
       }
     }
   ]
