@@ -95,6 +95,7 @@ export default function CharacterForm({
 }) {
   return (
     <Formik
+      enableReinitialize
       initialValues={character}
       onSubmit={onSubmit}
       render={({ handleSubmit }) => (
