@@ -1409,7 +1409,7 @@ module.exports = {
     },
     {
       name: "Thia Ilfakur",
-      notes: "",
+      notes: "Pakita 8/20",
       basics: {
         class: "Ranger",
         level: 6,
@@ -1417,7 +1417,7 @@ module.exports = {
         player: "Elena",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 14000
+        experiencePoints: 15225
       },
       abilityScores: {
         STR: 10,
@@ -1546,7 +1546,7 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 42,
-        current: 42,
+        current: 36,
         temporary: 0
       },
       hitDice: {
@@ -2134,7 +2134,7 @@ module.exports = {
         player: "Seth",
         race: "Wood Elf",
         alignment: "Lawful Neutral",
-        experiencePoints: 14000
+        experiencePoints: 15225
       },
       abilityScores: {
         STR: 12,
@@ -2144,7 +2144,7 @@ module.exports = {
         WIS: 15,
         CHA: 8
       },
-      inspiration: false,
+      inspiration: true,
       condition: "Normal",
       proficiencyBonus: 3,
       savingThrows: {
@@ -2270,7 +2270,7 @@ module.exports = {
       speed: 50,
       hitPoints: {
         maximum: 39,
-        current: 39,
+        current: 5,
         temporary: 0
       },
       hitDice: {
@@ -2303,7 +2303,7 @@ module.exports = {
       resource: {
         name: "Ki",
         maximum: 6,
-        current: 6
+        current: 5
       },
       gold: 600,
       equipment: [
@@ -2386,7 +2386,8 @@ module.exports = {
           "Unarmored Movement",
           "Monastic Tradition: <which>",
           "Slow Fall",
-          "Ki-Empowered Strikes"
+          "Ki-Empowered Strikes",
+          "Shadow Step"
         ],
         background: ["City Secrets"],
         feat: ["", ""],
@@ -2850,8 +2851,7 @@ module.exports = {
     },
     {
       name: "Legolas",
-      notes:
-        "How did you determine AC?\nWhy did you think your had 2 Action Surges?",
+      notes: "Bound w/ Light XBow\nGroup Inventory: 1535GP",
       basics: {
         class: "Fighter",
         level: 6,
@@ -2859,7 +2859,7 @@ module.exports = {
         player: "Jared",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 14000
+        experiencePoints: 15225
       },
       abilityScores: {
         STR: "8",
@@ -2869,7 +2869,7 @@ module.exports = {
         WIS: 13,
         CHA: 10
       },
-      inspiration: false,
+      inspiration: true,
       condition: "Normal",
       proficiencyBonus: 3,
       savingThrows: {
@@ -2985,7 +2985,7 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 46,
-        current: 46,
+        current: 31,
         temporary: 0
       },
       hitDice: {
@@ -3018,7 +3018,7 @@ module.exports = {
       resource: {
         name: "Action Surge",
         maximum: 1,
-        current: 1
+        current: 0
       },
       gold: 400,
       equipment: [
@@ -3102,7 +3102,7 @@ module.exports = {
           "Extra Attack"
         ],
         background: ["Wanderer"],
-        feat: ["Crossbow Expert", ""],
+        feat: ["Crossbow Expert", "Sharpshooter"],
         item: [""]
       },
       spellcastingClass: "Eldritch Knight",
