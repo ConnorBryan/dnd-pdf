@@ -1409,7 +1409,7 @@ module.exports = {
     },
     {
       name: "Thia Ilfakur",
-      notes: "Pakita 8/20",
+      notes: "Pakita 14/20",
       basics: {
         class: "Ranger",
         level: 6,
@@ -1417,7 +1417,7 @@ module.exports = {
         player: "Elena",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 15225
+        experiencePoints: 15955
       },
       abilityScores: {
         STR: 10,
@@ -1427,7 +1427,7 @@ module.exports = {
         WIS: 15,
         CHA: 8
       },
-      inspiration: false,
+      inspiration: true,
       condition: "Normal",
       proficiencyBonus: 3,
       savingThrows: {
@@ -1546,13 +1546,13 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 42,
-        current: 36,
+        current: 40,
         temporary: 0
       },
       hitDice: {
         total: 6,
         die: "1d10",
-        current: 6,
+        current: 5,
         maximum: "3"
       },
       deathSaves: {
@@ -2134,7 +2134,7 @@ module.exports = {
         player: "Seth",
         race: "Wood Elf",
         alignment: "Lawful Neutral",
-        experiencePoints: 15225
+        experiencePoints: 15955
       },
       abilityScores: {
         STR: 12,
@@ -2144,7 +2144,7 @@ module.exports = {
         WIS: 15,
         CHA: 8
       },
-      inspiration: true,
+      inspiration: false,
       condition: "Normal",
       proficiencyBonus: 3,
       savingThrows: {
@@ -2270,17 +2270,17 @@ module.exports = {
       speed: 50,
       hitPoints: {
         maximum: 39,
-        current: 5,
+        current: 22,
         temporary: 0
       },
       hitDice: {
         total: 6,
         die: "1d8",
-        current: 6,
+        current: 4,
         maximum: "3"
       },
       deathSaves: {
-        successes: "0",
+        successes: 0,
         failures: "0"
       },
       attacksAndSpellcasting: [
@@ -2859,7 +2859,7 @@ module.exports = {
         player: "Jared",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 15225
+        experiencePoints: 15955
       },
       abilityScores: {
         STR: "8",
@@ -2985,13 +2985,13 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 46,
-        current: 31,
+        current: 20,
         temporary: 0
       },
       hitDice: {
         total: 6,
         die: "1d10",
-        current: 6,
+        current: 4,
         maximum: "3"
       },
       deathSaves: {
