@@ -2467,16 +2467,16 @@ module.exports = {
           },
           spells: [
             {
-              name: "",
-              prepared: false
+              name: "Darkness",
+              prepared: true
             },
             {
-              name: "",
-              prepared: false
+              name: "Pass Without Trace",
+              prepared: true
             },
             {
-              name: "",
-              prepared: false
+              name: "Silence",
+              prepared: true
             },
             {
               name: "",
@@ -2846,12 +2846,13 @@ module.exports = {
             }
           ]
         },
-        cantrips: ["", "", "", "", "", "", "", ""]
+        cantrips: ["Minor Illusion", "", "", "", "", "", "", ""]
       }
     },
     {
       name: "Legolas",
-      notes: "Bound w/ Light XBow\nGroup Inventory: 1535GP",
+      notes:
+        "Bound w/ Light XBow\nGroup Inventory: 1535GP\nHolding Goblin Skin of a Child\nSecond Wind: 0/1 (on short rest)",
       basics: {
         class: "Fighter",
         level: 6,
@@ -3071,8 +3072,8 @@ module.exports = {
           quantity: 1
         },
         {
-          name: "",
-          quantity: ""
+          name: "Zombie Beholder Eye",
+          quantity: 3
         },
         {
           name: "",
