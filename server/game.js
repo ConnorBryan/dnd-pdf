@@ -1417,7 +1417,7 @@ module.exports = {
         player: "Elena",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 15955
+        experiencePoints: 16410
       },
       abilityScores: {
         STR: 10,
@@ -1581,7 +1581,7 @@ module.exports = {
         maximum: "",
         current: ""
       },
-      gold: 400,
+      gold: 417,
       equipment: [
         {
           name: "Scale Mail",
@@ -2134,7 +2134,7 @@ module.exports = {
         player: "Seth",
         race: "Wood Elf",
         alignment: "Lawful Neutral",
-        experiencePoints: 15955
+        experiencePoints: 16410
       },
       abilityScores: {
         STR: 12,
@@ -2270,7 +2270,7 @@ module.exports = {
       speed: 50,
       hitPoints: {
         maximum: 39,
-        current: 22,
+        current: 32,
         temporary: 0
       },
       hitDice: {
@@ -2305,7 +2305,7 @@ module.exports = {
         maximum: 6,
         current: 5
       },
-      gold: 600,
+      gold: 617,
       equipment: [
         {
           name: "Small Knife",
@@ -2860,7 +2860,7 @@ module.exports = {
         player: "Jared",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 15955
+        experiencePoints: 16410
       },
       abilityScores: {
         STR: "8",
@@ -2986,7 +2986,7 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 46,
-        current: 20,
+        current: 34,
         temporary: 0
       },
       hitDice: {
@@ -3021,7 +3021,7 @@ module.exports = {
         maximum: 1,
         current: 0
       },
-      gold: 400,
+      gold: 417,
       equipment: [
         {
           name: "Chain Mail",
