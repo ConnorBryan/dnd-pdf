@@ -1409,7 +1409,7 @@ module.exports = {
     },
     {
       name: "Thia Ilfakur",
-      notes: "Pakita 14/20",
+      notes: "Pakita 6/20",
       basics: {
         class: "Ranger",
         level: 6,
@@ -1417,7 +1417,7 @@ module.exports = {
         player: "Elena",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 16410
+        experiencePoints: 16680
       },
       abilityScores: {
         STR: 10,
@@ -1628,8 +1628,8 @@ module.exports = {
           quantity: 1
         },
         {
-          name: "",
-          quantity: ""
+          name: "Dust of Disappearance",
+          quantity: 1
         },
         {
           name: "",
@@ -2126,7 +2126,7 @@ module.exports = {
     },
     {
       name: "Aelar",
-      notes: "",
+      notes: "36g for party",
       basics: {
         class: "Monk",
         level: 6,
@@ -2134,7 +2134,7 @@ module.exports = {
         player: "Seth",
         race: "Wood Elf",
         alignment: "Lawful Neutral",
-        experiencePoints: 16410
+        experiencePoints: 16680
       },
       abilityScores: {
         STR: 12,
@@ -2270,7 +2270,7 @@ module.exports = {
       speed: 50,
       hitPoints: {
         maximum: 39,
-        current: 32,
+        current: 28,
         temporary: 0
       },
       hitDice: {
@@ -2852,7 +2852,7 @@ module.exports = {
     {
       name: "Legolas",
       notes:
-        "Bound w/ Light XBow\nGroup Inventory: 1535GP\nHolding Goblin Skin of a Child\nSecond Wind: 0/1 (on short rest)",
+        "Bound w/ Light XBow\nGroup Inventory: 1535GP\nHolding Goblin Skin of a Child\nSecond Wind: 0/1 (on short rest)\nWizard's Spellbook",
       basics: {
         class: "Fighter",
         level: 6,
@@ -2860,7 +2860,7 @@ module.exports = {
         player: "Jared",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 16410
+        experiencePoints: 16680
       },
       abilityScores: {
         STR: "8",
