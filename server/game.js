@@ -1417,7 +1417,7 @@ module.exports = {
         player: "Elena",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 16680
+        experiencePoints: 17780
       },
       abilityScores: {
         STR: 10,
@@ -1535,7 +1535,7 @@ module.exports = {
       },
       passivePerception: 12,
       proficiencies: {
-        languages: ["Common", "Elvish", "Draconic", "", "", ""],
+        languages: ["Common", "Elvish", "Draconic", "Goblin", "", ""],
         tools: ["", "", "", "", "", ""],
         instruments: ["Viola", "", "", "", "", ""],
         weapons: ["Simple", "Martial", "Bows", "XBows", "", ""],
@@ -2134,7 +2134,7 @@ module.exports = {
         player: "Seth",
         race: "Wood Elf",
         alignment: "Lawful Neutral",
-        experiencePoints: 16680
+        experiencePoints: 17780
       },
       abilityScores: {
         STR: 12,
@@ -2852,7 +2852,7 @@ module.exports = {
     {
       name: "Legolas",
       notes:
-        "Bound w/ Light XBow\nGroup Inventory: 1535GP\nHolding Goblin Skin of a Child\nSecond Wind: 0/1 (on short rest)\nWizard's Spellbook",
+        "Bound w/ Light XBow\nGroup Inventory: 1606GP\nSecond Wind: 0/1 (on short rest)\nWizard's Spellbook",
       basics: {
         class: "Fighter",
         level: 6,
@@ -2860,7 +2860,7 @@ module.exports = {
         player: "Jared",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 16680
+        experiencePoints: 17780
       },
       abilityScores: {
         STR: "8",
@@ -2986,7 +2986,7 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 46,
-        current: 34,
+        current: 24,
         temporary: 0
       },
       hitDice: {
