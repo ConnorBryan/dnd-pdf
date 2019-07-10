@@ -1409,7 +1409,7 @@ module.exports = {
     },
     {
       name: "Thia Ilfakur",
-      notes: "Pakita 6/20",
+      notes: "Pakita 20/20",
       basics: {
         class: "Ranger",
         level: 6,
@@ -1546,7 +1546,7 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 42,
-        current: 40,
+        current: 35,
         temporary: 0
       },
       hitDice: {
@@ -1568,7 +1568,7 @@ module.exports = {
         {
           name: "Eagle Talons",
           bonus: 8,
-          damage: "1d4+6 prc."
+          damage: "1d4+5 prc."
         },
         {
           name: "Hand-Axe",
@@ -2270,7 +2270,7 @@ module.exports = {
       speed: 50,
       hitPoints: {
         maximum: 39,
-        current: 28,
+        current: 36,
         temporary: 0
       },
       hitDice: {
@@ -2303,7 +2303,7 @@ module.exports = {
       resource: {
         name: "Ki",
         maximum: 6,
-        current: 5
+        current: 6
       },
       gold: 617,
       equipment: [
@@ -2852,7 +2852,7 @@ module.exports = {
     {
       name: "Legolas",
       notes:
-        "Bound w/ Light XBow\nGroup Inventory: 1606GP\nSecond Wind: 0/1 (on short rest)\nWizard's Spellbook",
+        "Bound w/ Light XBow\nGroup Inventory: 1606GP\nSecond Wind: 1/1 (on short rest)\nWizard's Spellbook",
       basics: {
         class: "Fighter",
         level: 6,
@@ -2986,13 +2986,13 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 46,
-        current: 24,
+        current: 35,
         temporary: 0
       },
       hitDice: {
         total: 6,
         die: "1d10",
-        current: 4,
+        current: 3,
         maximum: "3"
       },
       deathSaves: {
@@ -3019,9 +3019,9 @@ module.exports = {
       resource: {
         name: "Action Surge",
         maximum: 1,
-        current: 0
+        current: 1
       },
-      gold: 417,
+      gold: 582,
       equipment: [
         {
           name: "Chain Mail",
