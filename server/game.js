@@ -1417,7 +1417,7 @@ module.exports = {
         player: "Elena",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 17780
+        experiencePoints: 18614
       },
       abilityScores: {
         STR: 10,
@@ -1546,7 +1546,7 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 42,
-        current: 35,
+        current: 19,
         temporary: 0
       },
       hitDice: {
@@ -1676,7 +1676,7 @@ module.exports = {
         "1": {
           slots: {
             maximum: 4,
-            expended: 0
+            expended: 1
           },
           spells: [
             {
@@ -2134,7 +2134,7 @@ module.exports = {
         player: "Seth",
         race: "Wood Elf",
         alignment: "Lawful Neutral",
-        experiencePoints: 17780
+        experiencePoints: 18614
       },
       abilityScores: {
         STR: 12,
@@ -2270,7 +2270,7 @@ module.exports = {
       speed: 50,
       hitPoints: {
         maximum: 39,
-        current: 36,
+        current: 20,
         temporary: 0
       },
       hitDice: {
@@ -2860,7 +2860,7 @@ module.exports = {
         player: "Jared",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 17780
+        experiencePoints: 18614
       },
       abilityScores: {
         STR: "8",
@@ -2986,7 +2986,7 @@ module.exports = {
       speed: 35,
       hitPoints: {
         maximum: 46,
-        current: 35,
+        current: 34,
         temporary: 0
       },
       hitDice: {
