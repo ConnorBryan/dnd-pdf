@@ -1412,12 +1412,12 @@ module.exports = {
       notes: "Pakita 20/20",
       basics: {
         class: "Ranger",
-        level: 6,
+        level: 7,
         background: "Outlander",
         player: "Elena",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 18614
+        experiencePoints: 23000
       },
       abilityScores: {
         STR: 10,
@@ -2129,12 +2129,12 @@ module.exports = {
       notes: "36g for party",
       basics: {
         class: "Monk",
-        level: 6,
+        level: 7,
         background: "Urchin",
         player: "Seth",
         race: "Wood Elf",
         alignment: "Lawful Neutral",
-        experiencePoints: 18614
+        experiencePoints: 23000
       },
       abilityScores: {
         STR: 12,
@@ -2855,12 +2855,12 @@ module.exports = {
         "Bound w/ Light XBow\nGroup Inventory: 1606GP\nSecond Wind: 1/1 (on short rest)\nWizard's Spellbook",
       basics: {
         class: "Fighter",
-        level: 6,
+        level: 7,
         background: "Outlander",
         player: "Jared",
         race: "Wood Elf",
         alignment: "Neutral",
-        experiencePoints: 18614
+        experiencePoints: 23000
       },
       abilityScores: {
         STR: "8",
